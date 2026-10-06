@@ -89,6 +89,7 @@ img { max-width: 100%; display: block; }
 }
 .status { display: flex; gap: 6px; align-items: center; }
 .status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+.status[data-state="BUILDING"]::before, .status[data-state="QUEUED"]::before, .status[data-state="INITIALIZING"]::before { background: var(--pierre); }
 .card-title { font-family: var(--serif); font-size: 32px; line-height: 1; overflow-wrap: anywhere; }
 .card-desc { font-size: 15px; line-height: 1.45; color: var(--graphite); }
 .tags { display: flex; gap: 6px; flex-wrap: wrap; padding-top: 4px; }

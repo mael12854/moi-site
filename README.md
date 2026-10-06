@@ -2,17 +2,26 @@
 
 Tous mes projets web, construits avec Claude Code.
 
-Site statique (HTML/CSS, aucun build), déployable tel quel sur Vercel.
+Site statique (HTML/CSS, aucun build) + une fonction Vercel, déployable tel quel.
 
 - `/` — accueil : cartes projets, index, « comment c'est fait »
 - `/brand` — brand guidelines v1.0 (export Claude Design)
 
-## Ajouter un projet
+## Projets : automatiques
 
-Modifier `assets/projects.js` : ajouter une entrée avec le numéro suivant
-(N°015…), la date `AAAA-MM`, l'URL et le dépôt. Pour remplacer la zone
-hachurée par une vraie capture, déposer une image 16:10 (2× minimum) dans
-`captures/` et renseigner `capture: '/captures/nom.png'`.
+La page lit `/api/projects` (fonction Vercel, `api/projects.js`), qui liste les
+projets de l'équipe Vercel et leur dernier déploiement de production. Un nouveau
+site ou un nouveau déploiement apparaît donc tout seul (cache d'une minute).
+
+- Numéro = ordre de création (N°001 = le plus ancien), tri = dernier déploiement.
+- Texte de la carte = dernier commit, sauf si une `desc` est donnée.
+- Pour une description, une capture ou masquer un projet : `PROJECT_OVERRIDES`
+  dans `assets/projects.js`. Captures : image 16:10 (2× minimum) dans `captures/`.
+
+Réglage requis (une fois) : variable d'environnement `VERCEL_TOKEN` dans le
+projet Vercel (Settings → Environment Variables), avec un jeton créé dans
+Vercel → Account Settings → Tokens, limité à l'équipe « Projets de Maël ».
+Sans jeton, la page affiche la liste de secours `PROJECTS_FALLBACK`.
 
 ## Tokens
 
