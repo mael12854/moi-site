@@ -41,21 +41,23 @@ async function latestProductionDeploys(token) {
   return latest;
 }
 
-// Domaine public : un domaine perso d'abord, sinon le plus court en .vercel.app.
-function pickDomain(names) {
+// Domaine public : un domaine perso d'abord, puis <nom-du-projet>.vercel.app,
+// sinon le plus court en .vercel.app.
+function pickDomain(names, projectName) {
   const list = (names || []).filter((a) => typeof a === 'string');
   const custom = list.filter((a) => !a.endsWith('.vercel.app'));
-  const pool = custom.length ? custom : list;
-  return [...pool].sort((a, b) => a.length - b.length)[0] || null;
+  if (custom.length) return [...custom].sort((a, b) => a.length - b.length)[0];
+  if (list.includes(`${projectName}.vercel.app`)) return `${projectName}.vercel.app`;
+  return [...list].sort((a, b) => a.length - b.length)[0] || null;
 }
 
 async function productionDomain(token, project) {
   const fromTargets = project.targets && project.targets.production && project.targets.production.alias;
-  if (fromTargets && fromTargets.length) return pickDomain(fromTargets);
+  if (fromTargets && fromTargets.length) return pickDomain(fromTargets, project.name);
   const body = await api(token, `/v9/projects/${encodeURIComponent(project.id)}/domains`);
   // Les domaines liés à une branche ou qui redirigent ne sont pas l'adresse publique.
   const names = (body.domains || []).filter((d) => !d.gitBranch && !d.redirect).map((d) => d.name);
-  return pickDomain(names);
+  return pickDomain(names, project.name);
 }
 
 function toProject(p, deploy, domain) {
