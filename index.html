@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>moi. — tous mes projets web</title>
+<meta name="description" content="Tous mes projets web, construits avec Claude Code. Une idée, un prompt, du code, une URL qui marche.">
+<meta property="og:title" content="moi. — tous mes projets web">
+<meta property="og:description" content="Tous mes projets web, construits avec Claude Code.">
+<meta property="og:image" content="/og.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F2EFE7">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<div class="wrap">
+
+<header class="site-header">
+  <a class="logo" href="/">moi<span class="dot">.</span></a>
+  <nav class="site-nav">
+    <a href="#projets">Projets</a><a href="#index">Index</a><a href="#process">Process</a><a href="/brand">Brand</a>
+  </nav>
+</header>
+
+<section class="cover">
+  <div class="cover-meta"><span id="count">Projets en ligne</span><span>Fait avec Claude Code</span><span>GitHub · Vercel</span></div>
+  <h1>moi<span class="dot">.</span></h1>
+  <p>Tous mes projets web, construits avec Claude Code. Montrer le travail, pas le discours&nbsp;: une idée, un prompt, du code, une URL qui marche.</p>
+</section>
+
+<section id="projets" class="section">
+  <div class="split">
+    <div class="label">01 — Projets</div>
+    <p class="lead-p span2">Chaque projet est en ligne. Clique sur une carte pour l'ouvrir.</p>
+  </div>
+  <div class="cards" id="cards"></div>
+</section>
+
+<section id="index" class="section">
+  <div class="split">
+    <div class="label">02 — Index</div>
+    <div class="span2"><div class="index" id="index-list"></div></div>
+  </div>
+</section>
+
+<section id="process" class="section">
+  <div class="split">
+    <div class="label">03 — Comment c'est fait</div>
+    <div class="span2" style="display:grid;gap:40px">
+      <p style="margin:0;font-family:var(--serif);font-size:clamp(34px,4.4vw,56px);line-height:1.05;letter-spacing:-0.015em;text-wrap:pretty">Une session Claude Code web, une branche, une pull request. Vercel déploie dès le merge.</p>
+      <div style="min-height:clamp(200px,28vw,360px);background:var(--encre);padding:clamp(20px,3vw,32px);display:grid;align-content:end;gap:8px;font-family:var(--mono);font-size:clamp(12px,1.4vw,15px);color:var(--papier)">
+        <div style="color:var(--pierre)">claude.ai/code · hosto-mm</div>
+        <div><span class="dot">›</span> Ajoute la réimpression des ordonnances</div>
+        <div style="color:var(--pierre)">✓ 4 fichiers modifiés · PR ouverte</div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:32px">
+        <div style="display:grid;gap:10px;align-content:start"><div class="mono" style="font-size:12px;color:var(--accent)">/01</div><div style="font-size:20px;font-weight:600">Livrer</div><div style="font-size:15px;line-height:1.5" class="muted">Un projet publié vaut mieux que dix maquettes. On montre ce qui tourne.</div></div>
+        <div style="display:grid;gap:10px;align-content:start"><div class="mono" style="font-size:12px;color:var(--accent)">/02</div><div style="font-size:20px;font-weight:600">Transparence</div><div style="font-size:15px;line-height:1.5" class="muted">Je dis comment c'est fait&nbsp;: Claude Code, la stack, le temps passé, ce qui a raté.</div></div>
+        <div style="display:grid;gap:10px;align-content:start"><div class="mono" style="font-size:12px;color:var(--accent)">/03</div><div style="font-size:20px;font-weight:600">Curiosité</div><div style="font-size:15px;line-height:1.5" class="muted">Petits outils, gros sites, expériences ratées&nbsp;: tout est bon à essayer.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <span>moi. — tous mes projets, faits avec Claude Code</span><a href="/brand">Brand guidelines v1.0</a>
+</footer>
+
+</div>
+<script src="/assets/projects.js"></script>
+</body>
+</html>

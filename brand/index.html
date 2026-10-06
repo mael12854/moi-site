@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand guidelines — moi.</title>
+<meta name="description" content="Brand guidelines v1.0 de moi. : mission, ton de voix, logo, couleurs, typographie, iconographie, images, grilles, applications, règles.">
+<meta property="og:image" content="/og.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F2EFE7;color:#15130F;font-family:'Geist',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#15130F;text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:#E8482B}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+/* Sur téléphone, la grille passe à 1 colonne : « span 2 » créerait une colonne fantôme. */
+@media (max-width:640px){[style*="grid-column:span 2"]{grid-column:auto!important}}
+section>div,section>div>div{min-width:0}
+</style>
+</head>
+<body>
+<div style="max-width:1240px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+
+<header style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:24px 0;border-bottom:1px solid #15130F;flex-wrap:wrap">
+  <a href="/" style="font-family:'Instrument Serif',serif;font-size:32px;line-height:1;letter-spacing:-0.01em;text-decoration:none;color:#15130F">moi<span style="color:#E8482B">.</span></a>
+  <nav style="display:flex;gap:18px;flex-wrap:wrap;font-family:'Geist Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:0.06em">
+    <a href="#mission" style="text-decoration:none">Mission</a><a href="#voix" style="text-decoration:none">Voix</a><a href="#logo" style="text-decoration:none">Logo</a><a href="#couleurs" style="text-decoration:none">Couleurs</a><a href="#type" style="text-decoration:none">Typo</a><a href="#icones" style="text-decoration:none">Icônes</a><a href="#images" style="text-decoration:none">Images</a><a href="#grilles" style="text-decoration:none">Grilles</a><a href="#applications" style="text-decoration:none">Applications</a><a href="#regles" style="text-decoration:none">Règles</a>
+  </nav>
+</header>
+
+<section data-screen-label="Couverture" style="padding:clamp(64px,10vw,140px) 0 clamp(48px,7vw,96px);display:grid;gap:40px">
+  <div style="font-family:'Geist Mono',monospace;font-size:13px;color:#4A463F;display:flex;gap:24px;flex-wrap:wrap"><span>Brand guidelines — v1.0</span><span>Octobre 2026</span><span>Usage personnel</span></div>
+  <h1 style="margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(88px,18vw,260px);line-height:0.85;letter-spacing:-0.035em">moi<span style="color:#E8482B">.</span></h1>
+  <p style="margin:0;max-width:640px;font-size:clamp(20px,2.2vw,26px);line-height:1.35;text-wrap:pretty">Tous mes projets web, construits avec Claude Code. Ce document fixe les règles pour que chaque page, chaque fiche projet et chaque capture parlent d'une seule voix&nbsp;: la mienne.</p>
+</section>
+
+<section id="mission" data-screen-label="01 Mission" style="border-top:1px solid #15130F;padding:56px 0 88px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:40px">
+  <div style="font-family:'Geist Mono',monospace;font-size:13px">01 — Mission &amp; valeurs</div>
+  <div style="grid-column:span 2;display:grid;gap:48px;min-width:0">
+    <p style="margin:0;font-family:'Instrument Serif',serif;font-size:clamp(34px,4.4vw,56px);line-height:1.05;letter-spacing:-0.015em;text-wrap:pretty">Montrer le travail, pas le discours. Chaque projet est une preuve&nbsp;: une idée, un prompt, du code, une URL qui marche.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:32px">
+      <div style="display:grid;gap:10px;align-content:start"><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#E8482B">/01</div><div style="font-size:20px;font-weight:600">Livrer</div><div style="font-size:15px;line-height:1.5;color:#4A463F">Un projet publié vaut mieux que dix maquettes. On montre ce qui tourne.</div></div>
+      <div style="display:grid;gap:10px;align-content:start"><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#E8482B">/02</div><div style="font-size:20px;font-weight:600">Transparence</div><div style="font-size:15px;line-height:1.5;color:#4A463F">Je dis comment c'est fait&nbsp;: Claude Code, la stack, le temps passé, ce qui a raté.</div></div>
+      <div style="display:grid;gap:10px;align-content:start"><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#E8482B">/03</div><div style="font-size:20px;font-weight:600">Curiosité</div><div style="font-size:15px;line-height:1.5;color:#4A463F">Petits outils, gros sites, expériences ratées&nbsp;: tout est bon à essayer.</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="voix" data-screen-label="02 Ton de voix" style="border-top:1px solid #15130F;padding:56px 0 88px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:40px">
+  <div style="font-family:'Geist Mono',monospace;font-size:13px">02 — Ton de voix</div>
+  <div style="grid-column:span 2;display:grid;gap:40px;min-width:0">
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+      <span style="padding:10px 18px;border:1px solid #15130F;border-radius:999px;font-size:16px">Direct</span>
+      <span style="padding:10px 18px;border:1px solid #15130F;border-radius:999px;font-size:16px">Concret</span>
+      <span style="padding:10px 18px;border:1px solid #15130F;border-radius:999px;font-size:16px">Un peu d'humour</span>
+      <span style="padding:10px 18px;border:1px solid #15130F;border-radius:999px;font-size:16px">Tutoiement</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:2px;background:#15130F;border:1px solid #15130F">
+      <div style="background:#F2EFE7;padding:28px;display:grid;gap:14px;align-content:start"><div style="font-family:'Geist Mono',monospace;font-size:12px">OUI</div><div style="font-size:19px;line-height:1.4">«&nbsp;agenda-college. La journée finit au dernier cours, pas à une heure fixe. Fait avec Claude Code web, en ligne sur Vercel.&nbsp;»</div></div>
+      <div style="background:#F2EFE7;padding:28px;display:grid;gap:14px;align-content:start"><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">NON</div><div style="font-size:19px;line-height:1.4;color:#4A463F;text-decoration:line-through;text-decoration-color:#E8482B">«&nbsp;Une solution innovante et disruptive propulsée par l'IA de nouvelle génération.&nbsp;»</div></div>
+    </div>
+    <ul style="margin:0;padding:0;list-style:none;display:grid;gap:12px;font-size:16px;line-height:1.5">
+      <li style="display:flex;gap:14px"><span style="font-family:'Geist Mono',monospace;color:#E8482B">→</span>Phrases courtes. Un chiffre réel vaut mieux qu'un adjectif.</li>
+      <li style="display:flex;gap:14px"><span style="font-family:'Geist Mono',monospace;color:#E8482B">→</span>Les titres de projets sont des noms simples, pas des slogans.</li>
+      <li style="display:flex;gap:14px"><span style="font-family:'Geist Mono',monospace;color:#E8482B">→</span>On assume les échecs&nbsp;: une section «&nbsp;ce qui n'a pas marché&nbsp;» par projet.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="logo" data-screen-label="03 Logo" style="border-top:1px solid #15130F;padding:56px 0 88px;display:grid;gap:40px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:40px">
+    <div style="font-family:'Geist Mono',monospace;font-size:13px">03 — Logo &amp; usages</div>
+    <p style="grid-column:span 2;margin:0;font-size:17px;line-height:1.55;max-width:620px;text-wrap:pretty">Le logo est un mot-symbole en Instrument Serif, suivi d'un point de couleur. Le point, c'est la fin de la phrase — et le curseur qui attend la suivante. Il ne change jamais de couleur que l'accent.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:16px">
+    <div style="background:#FBFAF6;border:1px solid #CFC9BC;aspect-ratio:4/3;display:grid;place-items:center;position:relative"><div style="font-family:'Instrument Serif',serif;font-size:clamp(80px,10vw,128px);line-height:1;letter-spacing:-0.03em">moi<span style="color:#E8482B">.</span></div><div style="position:absolute;left:16px;bottom:14px;font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">Principal — sur clair</div></div>
+    <div style="background:#15130F;aspect-ratio:4/3;display:grid;place-items:center;position:relative;color:#F2EFE7"><div style="font-family:'Instrument Serif',serif;font-size:clamp(80px,10vw,128px);line-height:1;letter-spacing:-0.03em">moi<span style="color:#E8482B">.</span></div><div style="position:absolute;left:16px;bottom:14px;font-family:'Geist Mono',monospace;font-size:12px;color:#CFC9BC">Principal — sur foncé</div></div>
+    <div style="background:#E8482B;aspect-ratio:4/3;display:grid;place-items:center;position:relative;color:#15130F"><div style="font-family:'Instrument Serif',serif;font-size:clamp(80px,10vw,128px);line-height:1;letter-spacing:-0.03em">moi<span style="color:#15130F">.</span></div><div style="position:absolute;left:16px;bottom:14px;font-family:'Geist Mono',monospace;font-size:12px">Monochrome — sur accent</div></div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:32px">
+    <div style="display:grid;gap:14px;align-content:start">
+      <div style="display:flex;gap:14px;align-items:end">
+        <div style="width:96px;height:96px;background:#15130F;color:#F2EFE7;display:flex;align-items:center;justify-content:center;font-family:'Instrument Serif',serif;font-size:64px;line-height:1;border-radius:20px"><span>m<span style="color:#E8482B">.</span></span></div>
+        <div style="width:48px;height:48px;background:#15130F;color:#F2EFE7;display:flex;align-items:center;justify-content:center;font-family:'Instrument Serif',serif;font-size:32px;line-height:1;border-radius:10px"><span>m<span style="color:#E8482B">.</span></span></div>
+        <div style="width:24px;height:24px;background:#E8482B;border-radius:6px"></div>
+      </div>
+      <div style="font-size:15px;line-height:1.5;color:#4A463F">Monogramme&nbsp;: initiale + point. Favicon sous 32&nbsp;px&nbsp;: le point seul, en carré.</div>
+    </div>
+    <div style="display:grid;gap:14px;align-content:start">
+      <div style="border:1px dashed #E8482B;padding:24px;display:inline-grid;justify-self:start"><div style="font-family:'Instrument Serif',serif;font-size:56px;line-height:1">moi<span style="color:#E8482B">.</span></div></div>
+      <div style="font-size:15px;line-height:1.5;color:#4A463F">Zone de protection = hauteur du «&nbsp;o&nbsp;» tout autour. Taille minimale&nbsp;: 20&nbsp;px de haut à l'écran.</div>
+    </div>
+  </div>
+</section>
+
+<section id="couleurs" data-screen-label="04 Couleurs" style="border-top:1px solid #15130F;padding:56px 0 88px;display:grid;gap:40px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:40px">
+    <div style="font-family:'Geist Mono',monospace;font-size:13px">04 — Couleurs</div>
+    <p style="grid-column:span 2;margin:0;font-size:17px;line-height:1.55;max-width:620px">Une palette de papier et d'encre. L'accent est rare&nbsp;: un point, un lien survolé, un statut. Jamais pour du texte courant.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:12px">
+    <div style="display:grid;gap:12px"><div style="aspect-ratio:1;background:#F2EFE7;border:1px solid #CFC9BC"></div><div style="display:grid;gap:4px"><div style="font-weight:600">Papier</div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">#F2EFE7 · fond</div></div></div>
+    <div style="display:grid;gap:12px"><div style="aspect-ratio:1;background:#15130F"></div><div style="display:grid;gap:4px"><div style="font-weight:600">Encre</div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">#15130F · texte, traits</div></div></div>
+    <div style="display:grid;gap:12px"><div style="aspect-ratio:1;background:#E8482B"></div><div style="display:grid;gap:4px"><div style="font-weight:600">Vermillon</div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">#E8482B · accent</div></div></div>
+    <div style="display:grid;gap:12px"><div style="aspect-ratio:1;background:#4A463F"></div><div style="display:grid;gap:4px"><div style="font-weight:600">Graphite</div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">#4A463F · texte secondaire</div></div></div>
+    <div style="display:grid;gap:12px"><div style="aspect-ratio:1;background:#CFC9BC"></div><div style="display:grid;gap:4px"><div style="font-weight:600">Pierre</div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">#CFC9BC · bordures</div></div></div>
+  </div>
+  <div style="display:flex;height:28px;border:1px solid #15130F">
+    <div style="flex:60;background:#F2EFE7"></div><div style="flex:28;background:#15130F"></div><div style="flex:7;background:#CFC9BC"></div><div style="flex:3;background:#4A463F"></div><div style="flex:2;background:#E8482B"></div>
+  </div>
+  <div style="font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">Proportions&nbsp;: 60 papier · 28 encre · 7 pierre · 3 graphite · 2 accent</div>
+</section>
+
+<section id="type" data-screen-label="05 Typographie" style="border-top:1px solid #15130F;padding:56px 0 88px;display:grid;gap:48px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:40px">
+    <div style="font-family:'Geist Mono',monospace;font-size:13px">05 — Typographie</div>
+    <p style="grid-column:span 2;margin:0;font-size:17px;line-height:1.55;max-width:620px">Trois voix&nbsp;: un serif éditorial pour les titres, un sans net pour lire, une mono pour tout ce qui vient du terminal — stack, dates, commandes.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:2px;background:#15130F;border:1px solid #15130F">
+    <div style="background:#F2EFE7;padding:28px;display:grid;gap:20px;align-content:start"><div style="font-family:'Instrument Serif',serif;font-size:120px;line-height:0.9">Aa</div><div style="display:grid;gap:4px"><div style="font-weight:600">Instrument Serif</div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">Titres · logo · citations · 400 + italique</div></div></div>
+    <div style="background:#F2EFE7;padding:28px;display:grid;gap:20px;align-content:start"><div style="font-family:'Geist',sans-serif;font-size:120px;line-height:0.9;font-weight:500;letter-spacing:-0.04em">Aa</div><div style="display:grid;gap:4px"><div style="font-weight:600">Geist</div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">Texte · interface · 400 / 500 / 600</div></div></div>
+    <div style="background:#F2EFE7;padding:28px;display:grid;gap:20px;align-content:start"><div style="font-family:'Geist Mono',monospace;font-size:120px;line-height:0.9">Aa</div><div style="display:grid;gap:4px"><div style="font-weight:600">Geist Mono</div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">Labels · métadonnées · code · 400 / 500</div></div></div>
+  </div>
+  <div style="display:grid;gap:0">
+    <div style="display:grid;grid-template-columns:120px minmax(0,1fr);gap:24px;align-items:baseline;padding:20px 0;border-bottom:1px solid #CFC9BC"><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">Display · 96</div><div style="font-family:'Instrument Serif',serif;font-size:clamp(56px,7vw,96px);line-height:0.95;letter-spacing:-0.03em">Mes projets</div></div>
+    <div style="display:grid;grid-template-columns:120px minmax(0,1fr);gap:24px;align-items:baseline;padding:20px 0;border-bottom:1px solid #CFC9BC"><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">Titre · 48</div><div style="font-family:'Instrument Serif',serif;font-size:clamp(34px,4vw,48px);line-height:1.05">Un agenda de collège, <span style="font-style:italic">qui suit l'emploi du temps</span></div></div>
+    <div style="display:grid;grid-template-columns:120px minmax(0,1fr);gap:24px;align-items:baseline;padding:20px 0;border-bottom:1px solid #CFC9BC"><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">Lead · 22</div><div style="font-size:22px;line-height:1.4">La journée se termine au dernier cours, pas à une heure fixe.</div></div>
+    <div style="display:grid;grid-template-columns:120px minmax(0,1fr);gap:24px;align-items:baseline;padding:20px 0;border-bottom:1px solid #CFC9BC"><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">Corps · 17</div><div style="font-size:17px;line-height:1.6;max-width:620px">Une session Claude Code web, une branche, une pull request. Vercel déploie dès le merge&nbsp;; je passe le reste du temps sur les détails.</div></div>
+    <div style="display:grid;grid-template-columns:120px minmax(0,1fr);gap:24px;align-items:baseline;padding:20px 0;border-bottom:1px solid #CFC9BC"><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">Mono · 13</div><div style="font-family:'Geist Mono',monospace;font-size:13px;text-transform:uppercase;letter-spacing:0.06em">GitHub · Vercel · Claude Code web · 2026-09</div></div>
+  </div>
+</section>
+
+<section id="icones" data-screen-label="06 Iconographie" style="border-top:1px solid #15130F;padding:56px 0 88px;display:grid;gap:40px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:40px">
+    <div style="font-family:'Geist Mono',monospace;font-size:13px">06 — Iconographie</div>
+    <p style="grid-column:span 2;margin:0;font-size:17px;line-height:1.55;max-width:620px">Icônes au trait, 1,5&nbsp;px, coins arrondis, grille 24&nbsp;px — style Lucide. Toujours en encre, jamais remplies, jamais décoratives&nbsp;: une icône sert une action.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:2px;background:#CFC9BC;border:1px solid #CFC9BC">
+    <div style="background:#F2EFE7;aspect-ratio:1;display:grid;place-items:center;gap:8px;align-content:center"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#15130F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg><span style="font-family:'Geist Mono',monospace;font-size:11px;color:#4A463F">ouvrir</span></div>
+    <div style="background:#F2EFE7;aspect-ratio:1;display:grid;place-items:center;gap:8px;align-content:center"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#15130F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m4 17 6-5-6-5M12 19h8"></path></svg><span style="font-family:'Geist Mono',monospace;font-size:11px;color:#4A463F">terminal</span></div>
+    <div style="background:#F2EFE7;aspect-ratio:1;display:grid;place-items:center;gap:8px;align-content:center"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#15130F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2"></circle><circle cx="6" cy="18" r="2"></circle><circle cx="18" cy="8" r="2"></circle><path d="M6 8v8M18 10c0 4-6 3-11 6"></path></svg><span style="font-family:'Geist Mono',monospace;font-size:11px;color:#4A463F">code</span></div>
+    <div style="background:#F2EFE7;aspect-ratio:1;display:grid;place-items:center;gap:8px;align-content:center"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#15130F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg><span style="font-family:'Geist Mono',monospace;font-size:11px;color:#4A463F">projet</span></div>
+    <div style="background:#F2EFE7;aspect-ratio:1;display:grid;place-items:center;gap:8px;align-content:center"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#15130F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 6 0l3-3a4 4 0 0 0-6-6l-1 1M14 10a4 4 0 0 0-6 0l-3 3a4 4 0 0 0 6 6l1-1"></path></svg><span style="font-family:'Geist Mono',monospace;font-size:11px;color:#4A463F">lien</span></div>
+    <div style="background:#F2EFE7;aspect-ratio:1;display:grid;place-items:center;gap:8px;align-content:center"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#15130F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><span style="font-family:'Geist Mono',monospace;font-size:11px;color:#4A463F">durée</span></div>
+    <div style="background:#F2EFE7;aspect-ratio:1;display:grid;place-items:center;gap:8px;align-content:center"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#15130F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span style="font-family:'Geist Mono',monospace;font-size:11px;color:#4A463F">en ligne</span></div>
+    <div style="background:#F2EFE7;aspect-ratio:1;display:grid;place-items:center;gap:8px;align-content:center"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#15130F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"></path></svg><span style="font-family:'Geist Mono',monospace;font-size:11px;color:#4A463F">télécharger</span></div>
+  </div>
+</section>
+
+<section id="images" data-screen-label="07 Photographie" style="border-top:1px solid #15130F;padding:56px 0 88px;display:grid;gap:40px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:40px">
+    <div style="font-family:'Geist Mono',monospace;font-size:13px">07 — Images</div>
+    <p style="grid-column:span 2;margin:0;font-size:17px;line-height:1.55;max-width:620px">Les vraies images, ce sont les projets. Captures d'écran nettes, sans faux navigateur ni mockup 3D, posées sur Papier avec un filet Pierre. Photos perso&nbsp;: lumière naturelle, noir &amp; blanc accepté.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px">
+    <div style="display:grid;gap:10px"><div style="aspect-ratio:16/10;border:1px solid #CFC9BC;background:repeating-linear-gradient(135deg,#E8E4DA 0 10px,#F2EFE7 10px 20px);display:grid;place-items:center;font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">capture — page d'accueil projet</div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">16:10 · capture plein écran, 2× minimum</div></div>
+    <div style="display:grid;gap:10px"><div style="aspect-ratio:16/10;border:1px solid #CFC9BC;background:repeating-linear-gradient(135deg,#E8E4DA 0 10px,#F2EFE7 10px 20px);display:grid;place-items:center;font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">capture — détail d'interface</div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">Recadrage serré sur un détail qui compte</div></div>
+    <div style="display:grid;gap:10px"><div style="aspect-ratio:16/10;background:#15130F;padding:20px;display:grid;align-content:end;gap:6px;font-family:'Geist Mono',monospace;font-size:13px;color:#F2EFE7"><div style="color:#CFC9BC">claude.ai/code · hosto-mm</div><div><span style="color:#E8482B">›</span> Ajoute la réimpression des ordonnances</div><div style="color:#CFC9BC">✓ 4 fichiers modifiés · PR ouverte</div></div><div style="font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">La session Claude Code web comme image&nbsp;: montrer le process</div></div>
+  </div>
+</section>
+
+<section id="grilles" data-screen-label="08 Grilles" style="border-top:1px solid #15130F;padding:56px 0 88px;display:grid;gap:40px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:40px">
+    <div style="font-family:'Geist Mono',monospace;font-size:13px">08 — Mises en page</div>
+    <p style="grid-column:span 2;margin:0;font-size:17px;line-height:1.55;max-width:620px">Grille de 12 colonnes, max 1240&nbsp;px, gouttière 24&nbsp;px. Les sections s'ouvrent par un filet Encre pleine largeur et un label mono numéroté. Espacements sur une base de 8.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(6px,2vw,24px);height:160px">
+    <div style="background:#E8482B;opacity:0.18"></div><div style="background:#E8482B;opacity:0.18"></div><div style="background:#E8482B;opacity:0.18"></div><div style="background:#E8482B;opacity:0.18"></div><div style="background:#E8482B;opacity:0.18"></div><div style="background:#E8482B;opacity:0.18"></div><div style="background:#E8482B;opacity:0.18"></div><div style="background:#E8482B;opacity:0.18"></div><div style="background:#E8482B;opacity:0.18"></div><div style="background:#E8482B;opacity:0.18"></div><div style="background:#E8482B;opacity:0.18"></div><div style="background:#E8482B;opacity:0.18"></div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:24px">
+    <div style="border:1px solid #CFC9BC;padding:16px;display:grid;gap:8px;aspect-ratio:4/3;grid-template-rows:auto 1fr"><div style="height:2px;background:#15130F"></div><div style="display:grid;grid-template-columns:1fr 2fr;gap:8px"><div style="background:#CFC9BC;height:12px"></div><div style="display:grid;gap:6px;align-content:start"><div style="background:#15130F;height:22px;width:80%"></div><div style="background:#CFC9BC;height:8px"></div><div style="background:#CFC9BC;height:8px;width:70%"></div></div></div></div>
+    <div style="border:1px solid #CFC9BC;padding:16px;display:grid;gap:8px;aspect-ratio:4/3;grid-template-columns:1fr 1fr 1fr"><div style="background:#E8E4DA"></div><div style="background:#E8E4DA"></div><div style="background:#E8E4DA"></div><div style="background:#E8E4DA"></div><div style="background:#E8E4DA"></div><div style="background:#E8E4DA"></div></div>
+    <div style="border:1px solid #CFC9BC;padding:16px;display:grid;gap:8px;aspect-ratio:4/3;grid-template-rows:2fr 1fr"><div style="background:#E8E4DA"></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><div style="display:grid;gap:6px;align-content:start"><div style="background:#15130F;height:14px"></div><div style="background:#CFC9BC;height:8px"></div></div><div style="display:grid;gap:6px;align-content:start"><div style="background:#CFC9BC;height:8px"></div><div style="background:#CFC9BC;height:8px"></div></div></div></div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:24px;font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F"><div>Section&nbsp;: label 4 col · contenu 8 col</div><div>Index projets&nbsp;: 3 col, ratio 16:10</div><div>Fiche projet&nbsp;: image pleine largeur, puis 6 + 6</div></div>
+</section>
+
+<section id="applications" data-screen-label="09 Applications" style="border-top:1px solid #15130F;padding:56px 0 88px;display:grid;gap:40px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:40px">
+    <div style="font-family:'Geist Mono',monospace;font-size:13px">09 — Applications</div>
+    <p style="grid-column:span 2;margin:0;font-size:17px;line-height:1.55;max-width:620px">Les trois éléments qui reviennent partout sur le site&nbsp;: la carte projet, la ligne d'index, l'image de partage.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:24px;align-items:start">
+    <div style="display:grid;gap:12px">
+      <div style="font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">Carte projet</div>
+      <div style="background:#FBFAF6;border:1px solid #CFC9BC;display:grid">
+        <div style="aspect-ratio:16/10;background:repeating-linear-gradient(135deg,#E8E4DA 0 10px,#F2EFE7 10px 20px);border-bottom:1px solid #CFC9BC;display:grid;place-items:center;font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">capture</div>
+        <div style="padding:20px;display:grid;gap:10px">
+          <div style="display:flex;justify-content:space-between;font-family:'Geist Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#4A463F"><span>N°014 · 2026-10</span><span style="display:flex;gap:6px;align-items:center"><span style="width:7px;height:7px;border-radius:50%;background:#E8482B"></span>En ligne</span></div>
+          <div style="font-family:'Instrument Serif',serif;font-size:32px;line-height:1">hosto-mm</div>
+          <div style="font-size:15px;line-height:1.45;color:#4A463F">Ordonnances&nbsp;: émission enregistrée et réimpression.</div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;padding-top:4px"><span style="font-family:'Geist Mono',monospace;font-size:11px;border:1px solid #CFC9BC;padding:3px 8px">GitHub</span><span style="font-family:'Geist Mono',monospace;font-size:11px;border:1px solid #CFC9BC;padding:3px 8px">Vercel</span><span style="font-family:'Geist Mono',monospace;font-size:11px;border:1px solid #CFC9BC;padding:3px 8px">hosto-mm.vercel.app</span></div>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid;gap:12px">
+      <div style="font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">Index des projets</div>
+      <div style="display:grid;border-top:1px solid #15130F">
+        <div style="display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:12px;align-items:baseline;padding:14px 0;border-bottom:1px solid #CFC9BC"><span style="font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">014</span><span style="font-family:'Instrument Serif',serif;font-size:26px">hosto-mm</span><span style="font-family:'Geist Mono',monospace;font-size:12px;color:#E8482B">↗</span></div>
+        <div style="display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:12px;align-items:baseline;padding:14px 0;border-bottom:1px solid #CFC9BC"><span style="font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">013</span><span style="font-family:'Instrument Serif',serif;font-size:26px">ewk</span><span style="font-family:'Geist Mono',monospace;font-size:12px">↗</span></div>
+        <div style="display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:12px;align-items:baseline;padding:14px 0;border-bottom:1px solid #CFC9BC">
+<span style="font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">012</span><span style="font-family:'Instrument Serif',serif;font-size:26px">credit-domestique</span><span style="font-family:'Geist Mono',monospace;font-size:12px">↗</span></div>
+      </div>
+    </div>
+    <div style="display:grid;gap:12px">
+      <div style="font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">Image de partage · 1200×630</div>
+      <div style="aspect-ratio:1200/630;background:#15130F;color:#F2EFE7;padding:24px;display:grid;grid-template-rows:auto 1fr auto">
+        <div style="font-family:'Instrument Serif',serif;font-size:22px">moi<span style="color:#E8482B">.</span></div>
+        <div style="font-family:'Instrument Serif',serif;font-size:clamp(34px,4vw,48px);line-height:1;align-self:end">hosto-mm</div>
+        <div style="font-family:'Geist Mono',monospace;font-size:11px;color:#CFC9BC;text-transform:uppercase;letter-spacing:0.06em;padding-top:10px">N°014 · fait avec Claude Code</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="regles" data-screen-label="10 Règles" style="border-top:1px solid #15130F;padding:56px 0 88px;display:grid;gap:40px">
+  <div style="font-family:'Geist Mono',monospace;font-size:13px">10 — À faire / à ne pas faire</div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:2px;background:#15130F;border:1px solid #15130F">
+    <div style="background:#F2EFE7;padding:28px;display:grid;gap:16px;align-content:start">
+      <div style="font-family:'Instrument Serif',serif;font-size:36px">À faire</div>
+      <div style="display:flex;gap:12px;font-size:16px;line-height:1.5"><span style="font-family:'Geist Mono',monospace">+</span>Garder le point du logo dans la couleur accent.</div>
+      <div style="display:flex;gap:12px;font-size:16px;line-height:1.5"><span style="font-family:'Geist Mono',monospace">+</span>Numéroter chaque projet (N°001…) et le dater.</div>
+      <div style="display:flex;gap:12px;font-size:16px;line-height:1.5"><span style="font-family:'Geist Mono',monospace">+</span>Indiquer la stack et le temps passé en mono.</div>
+      <div style="display:flex;gap:12px;font-size:16px;line-height:1.5"><span style="font-family:'Geist Mono',monospace">+</span>Laisser respirer&nbsp;: beaucoup de Papier, peu d'éléments.</div>
+    </div>
+    <div style="background:#F2EFE7;padding:28px;display:grid;gap:16px;align-content:start">
+      <div style="font-family:'Instrument Serif',serif;font-size:36px">À éviter</div>
+      <div style="display:flex;gap:12px;font-size:16px;line-height:1.5"><span style="font-family:'Geist Mono',monospace;color:#E8482B">×</span>Dégradés violets, étincelles «&nbsp;IA&nbsp;», robots.</div>
+      <div style="display:flex;gap:12px;font-size:16px;line-height:1.5"><span style="font-family:'Geist Mono',monospace;color:#E8482B">×</span>Texte courant en couleur accent.</div>
+      <div style="display:flex;gap:12px;font-size:16px;line-height:1.5"><span style="font-family:'Geist Mono',monospace;color:#E8482B">×</span>Ombres portées et coins très arrondis sur les cartes.</div>
+      <div style="display:flex;gap:12px;font-size:16px;line-height:1.5"><span style="font-family:'Geist Mono',monospace;color:#E8482B">×</span>Étirer, contourer ou recolorer le logo.</div>
+    </div>
+  </div>
+</section>
+
+<footer style="border-top:1px solid #15130F;padding:28px 0 48px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:'Geist Mono',monospace;font-size:12px;color:#4A463F">
+  <span><a href="/" style="color:#4A463F">moi.</a> — brand guidelines v1.0</span><span>Tous mes projets, faits avec Claude Code</span>
+</footer>
+</div>
+</body>
+</html>
