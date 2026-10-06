@@ -91,6 +91,7 @@ window.PROJECTS_FALLBACK = [
   fetch('/api/projects')
     .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
     .then((data) => {
+      if (!data.projects || !data.projects.length) throw new Error('liste vide');
       const list = fromApi(data.projects || []).sort((a, b) => b.deployedAt - a.deployedAt);
       render(list);
     })
