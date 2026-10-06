@@ -7,25 +7,37 @@
 //   capture  chemin d'une capture 16:10 dans /captures
 //   hidden   true pour ne pas afficher le projet
 window.PROJECT_OVERRIDES = {
-  'hosto-mm': { desc: 'Ordonnances : émission enregistrée et réimpression.' },
-  'agenda-college': { desc: 'La journée finit au dernier cours, pas à une heure fixe.' },
+  'hosto-mm': { desc: 'L’hôpital de la famille : un espace médecins, infirmiers et patients, du dossier à l’ordonnance.' },
+  'ewk': { desc: 'L’École du Weekend : Maël fait cours à Marin, deux jours par semaine. Inscriptions, bulletins, cantine.' },
+  'credit-domestique': { desc: 'Une banque fictive pour toute la famille : comptes, cartes et virements, partagés en direct.' },
+  'tractopolis-marin': { desc: 'Tractopolis, un jeu 3D dans le navigateur. Ferme, chantier, ville : tu conduis, tu descends, tu nages.' },
+  'site-7e3': { desc: 'Le journal de la classe de 7e3 : ce qu’on a fait, semaine après semaine, avec projets et galerie.' },
+  'site-28bis': { desc: 'Le site d’une maison de famille : galerie photo, journal et charte graphique.' },
+  'studios-am': { desc: 'Les Studios A&M : production, cinéma, théâtre. Les films sortis et ceux en préparation.' },
+  'agenda-college': { desc: 'Créno : l’emploi du temps de la semaine et les heures de trou, calculées toutes seules. Sans compte.' },
+  'cocon-social': { desc: 'Cocon, le réseau social privé de la famille, sur invitation. Fil d’actu, photos et vidéos « Instants ».' },
+  'marin-plantes': { desc: 'Marin plante et soigne une plante pour toi. Tu suis sa vie dans un journal et tu peux venir la voir.' },
+  'sitedejojo': { desc: 'Le site de Jojo : ses photos et ses exploits.' },
+  'guinguette-am': { desc: 'La Guinguette A&M : la carte, la commande suivie en direct, les réservations et l’écran cuisine.' },
+  'maclasse-ea': { desc: 'Cahier de textes, emploi du temps et notes pour les classes de l’École Alsacienne. Non officiel.' },
   'projets-mael': { hidden: true }, // ce site
 };
 
-// Liste de secours, affichée si l'API Vercel ne répond pas.
+// Liste de secours, affichée si l'API Vercel ne répond pas (relevée le 2026-10-06).
 window.PROJECTS_FALLBACK = [
-  { n: 14, name: 'hosto-mm', date: '2026-10', url: 'https://hosto-mm.vercel.app' },
-  { n: 13, name: 'ewk', date: '2026-10', url: 'https://site-ewk.vercel.app', last: 'Retire la mention « pas de bulletin » de l’accueil.' },
-  { n: 12, name: 'credit-domestique', date: '2026-09', url: 'https://credit-domestique.vercel.app', last: 'Documente le compte de Diane dans le README.' },
-  { n: 11, name: 'tractopolis-marin', date: '2026-09', url: 'https://tractopolis-marin.vercel.app', last: 'Retire le toast « quelque chose brille » en double près de la boutique.' },
-  { n: 10, name: 'site-7e3', date: '2026-09', url: 'https://site-7e3.vercel.app', last: 'Ajoute un formulaire d’avis à étoiles sur la page Contact.' },
-  { n: 9, name: 'site-28bis', date: '2026-09', url: 'https://site-28bis.vercel.app', last: 'Corrige la mise en page mobile : la page défilait à l’horizontale.' },
-  { n: 8, name: 'studios-am', date: '2026-09', url: 'https://studios-am.vercel.app' },
-  { n: 7, name: 'agenda-college', date: '2026-09', url: 'https://agenda-college.vercel.app' },
-  { n: 6, name: 'cocon-social', date: '2026-08', url: 'https://cocon-social.vercel.app', last: 'Message plus clair quand la connexion atteint la limite d’envoi des codes.' },
-  { n: 5, name: 'marin-plantes', date: '2026-08', url: 'https://marin-plantes.vercel.app', last: 'Corrige le direct qui s’arrêtait après la première photo.' },
-  { n: 4, name: 'sitedejojo', date: '2026-08', url: 'https://sitedejojo.vercel.app', last: 'Ajoute la feuille de style.' },
-  { n: 3, name: 'guinguette-am', date: '2026-08', url: 'https://guinguette-am.vercel.app' },
+  { n: 1, name: 'guinguette-am', date: '2026-08', deployedAt: 1787649083499, url: 'https://guinguette-am.vercel.app' },
+  { n: 2, name: 'maclasse-ea', date: '2026-08', deployedAt: 1787329207505, url: 'https://maclasse-ea.vercel.app' },
+  { n: 3, name: 'studios-am', date: '2026-09', deployedAt: 1788957963379, url: 'https://studios-am.vercel.app' },
+  { n: 4, name: 'marin-plantes', date: '2026-08', deployedAt: 1787838059080, url: 'https://marin-plantes.vercel.app' },
+  { n: 5, name: 'credit-domestique', date: '2026-09', deployedAt: 1790521343377, url: 'https://credit-domestique.vercel.app' },
+  { n: 6, name: 'cocon-social', date: '2026-08', deployedAt: 1788077617675, url: 'https://cocon-social.vercel.app' },
+  { n: 7, name: 'sitedejojo', date: '2026-08', deployedAt: 1787833595917, url: 'https://sitedejojo.vercel.app' },
+  { n: 8, name: 'tractopolis-marin', date: '2026-09', deployedAt: 1790516423319, url: 'https://tractopolis-marin.vercel.app' },
+  { n: 9, name: 'site-7e3', date: '2026-09', deployedAt: 1789547795908, url: 'https://site-7e3.vercel.app' },
+  { n: 10, name: 'site-28bis', date: '2026-09', deployedAt: 1788961529317, url: 'https://site-28bis.vercel.app' },
+  { n: 11, name: 'agenda-college', date: '2026-09', deployedAt: 1788365126609, url: 'https://agenda-college.vercel.app' },
+  { n: 12, name: 'ewk', date: '2026-10', deployedAt: 1791045125082, url: 'https://site-ewk.vercel.app' },
+  { n: 13, name: 'hosto-mm', date: '2026-10', deployedAt: 1791212822239, url: 'https://hosto-mm.vercel.app' },
 ];
 
 (function () {
@@ -95,5 +107,5 @@ window.PROJECTS_FALLBACK = [
       const list = fromApi(data.projects || []).sort((a, b) => b.deployedAt - a.deployedAt);
       render(list);
     })
-    .catch(() => render([...window.PROJECTS_FALLBACK].sort((a, b) => b.n - a.n)));
+    .catch(() => render([...window.PROJECTS_FALLBACK].sort((a, b) => b.deployedAt - a.deployedAt)));
 })();
