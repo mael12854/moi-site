@@ -5,6 +5,7 @@
 // Ce fichier ne sert qu'à enrichir ou masquer, par nom de projet Vercel :
 //   desc     une phrase courte, concrète (remplace le dernier commit)
 //   capture  chemin d'une capture 16:10 dans /captures
+//   name     nom affiché, si différent du nom Vercel
 //   hidden   true pour ne pas afficher le projet
 window.PROJECT_OVERRIDES = {
   'hosto-mm': { desc: 'L’hôpital de la famille : un espace médecins, infirmiers et patients, du dossier à l’ordonnance.' },
@@ -20,7 +21,7 @@ window.PROJECT_OVERRIDES = {
   'sitedejojo': { desc: 'Le site de Jojo : ses photos et ses exploits.' },
   'guinguette-am': { desc: 'La Guinguette A&M : la carte, la commande suivie en direct, les réservations et l’écran cuisine.' },
   'maclasse-ea': { desc: 'Cahier de textes, emploi du temps et notes pour les classes de l’École Alsacienne. Non officiel.' },
-  'projets-mael': { hidden: true }, // ce site
+  'projets-mael': { name: 'mael-moi', desc: 'Ce site : tous mes projets au même endroit, mis à jour tout seul à chaque déploiement.' },
 };
 
 // Liste de secours, affichée si l'API Vercel ne répond pas (relevée le 2026-10-06).
@@ -37,6 +38,7 @@ window.PROJECTS_FALLBACK = [
   { n: 10, name: 'site-28bis', date: '2026-09', deployedAt: 1788961529317, url: 'https://site-28bis.vercel.app' },
   { n: 11, name: 'agenda-college', date: '2026-09', deployedAt: 1788365126609, url: 'https://agenda-college.vercel.app' },
   { n: 12, name: 'ewk', date: '2026-10', deployedAt: 1791045125082, url: 'https://site-ewk.vercel.app' },
+  { n: 14, name: 'projets-mael', date: '2026-10', deployedAt: 1791269883937, url: 'https://mael-moi.vercel.app' },
   { n: 13, name: 'hosto-mm', date: '2026-10', deployedAt: 1791212822239, url: 'https://hosto-mm.vercel.app' },
 ];
 

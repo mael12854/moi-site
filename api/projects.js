@@ -84,20 +84,17 @@ module.exports = async (req, res) => {
     return;
   }
   try {
-    const self = process.env.VERCEL_PROJECT_ID;
     const [all, deploys] = await Promise.all([
       paginate(token, '/v10/projects', 'projects', {}, 'from'),
       latestProductionDeploys(token),
     ]);
     const projects = await Promise.all(
-      all
-        .filter((p) => p.id !== self)
-        .map(async (p) => {
-          const deploy = (p.targets && p.targets.production) || deploys.get(p.id) || deploys.get(p.name);
-          if (!deploy) return null;
-          const domain = await productionDomain(token, p).catch(() => null);
-          return toProject(p, deploy, domain);
-        })
+      all.map(async (p) => {
+        const deploy = (p.targets && p.targets.production) || deploys.get(p.id) || deploys.get(p.name);
+        if (!deploy) return null;
+        const domain = await productionDomain(token, p).catch(() => null);
+        return toProject(p, deploy, domain);
+      })
     );
     const list = projects.filter(Boolean);
     // Cache CDN : une minute frais, puis resservi pendant la mise à jour.
