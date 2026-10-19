@@ -8,8 +8,8 @@
 //   name     nom affiché, si différent du nom Vercel
 //   hidden   true pour ne pas afficher le projet
 window.PROJECT_OVERRIDES = {
-  'hosto-mm': { desc: 'L’hôpital de la famille : un espace médecins, infirmiers et patients, du dossier à l’ordonnance.' },
-  'ewk': { desc: 'L’École du Weekend : Maël fait cours à Marin, deux jours par semaine. Inscriptions, bulletins, cantine.' },
+  'hosto-mm': { desc: 'L’hôpital de la famille, sur deux sites : urgences, bloc opératoire, ordonnances, examens, messagerie patient-médecin et dossier complet à imprimer.' },
+  'ewk': { desc: 'L’École du Weekend : Maël fait cours à Marin, deux jours par semaine. Emploi du temps, programme de maths par chapitres, appel et cantine au scanner, bulletins trimestriels.' },
   'credit-domestique': { desc: 'Une banque fictive pour toute la famille : comptes, cartes et virements, partagés en direct.' },
   'tractopolis-marin': { desc: 'Tractopolis, un jeu 3D dans le navigateur. Ferme, chantier, ville : tu conduis, tu descends, tu nages.' },
   'site-7e3': { desc: 'Le journal de la classe de 7e3 : ce qu’on a fait, semaine après semaine, avec projets et galerie.' },
