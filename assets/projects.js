@@ -21,6 +21,10 @@ window.PROJECT_OVERRIDES = {
   'sitedejojo': { desc: 'Le site de Jojo : ses photos et ses exploits.' },
   'guinguette-am': { desc: 'La Guinguette A&M : la carte, la commande suivie en direct, les réservations et l’écran cuisine.' },
   'maclasse-ea': { desc: 'Cahier de textes, emploi du temps et notes pour les classes de l’École Alsacienne. Non officiel.' },
+  'ti-mael': { desc: 'Ti Maël, la crêperie aux volets bleus : la carte, la commande en ligne suivie en direct et la fidélité.' },
+  'preau': { desc: 'Préau : l’espace numérique du collège et du lycée, une alternative à École Directe. Sans notes sur 20 ni classement.' },
+  'memory-studio': { desc: 'Memory Studio : un questionnaire pour choisir ce qu’on garde en mémoire, puis le relire, le modifier ou l’effacer.' },
+  'triathlon-marin': { desc: 'Le triathlon de Marin du 18 octobre : la course, et la liste des supporters qui viennent l’encourager.' },
   'projets-mael': { name: 'mael-moi', desc: 'Ce site : tous mes projets au même endroit, mis à jour tout seul à chaque déploiement.' },
 };
 
@@ -38,6 +42,10 @@ window.PROJECTS_FALLBACK = [
   { n: 10, name: 'site-28bis', date: '2026-09', deployedAt: 1788961529317, url: 'https://site-28bis.vercel.app' },
   { n: 11, name: 'agenda-college', date: '2026-09', deployedAt: 1788365126609, url: 'https://agenda-college.vercel.app' },
   { n: 12, name: 'ewk', date: '2026-10', deployedAt: 1791045125082, url: 'https://site-ewk.vercel.app' },
+  { n: 18, name: 'triathlon-marin', date: '2026-10', deployedAt: 1792326554515, url: 'https://triathlon-marin.vercel.app' },
+  { n: 17, name: 'memory-studio', date: '2026-10', deployedAt: 1792237069319, url: 'https://memory-studio-two.vercel.app', repo: null },
+  { n: 16, name: 'preau', date: '2026-10', deployedAt: 1791881475398, url: 'https://logiciel-preau.vercel.app' },
+  { n: 15, name: 'ti-mael', date: '2026-10', deployedAt: 1791440159541, url: 'https://ti-mael.vercel.app' },
   { n: 14, name: 'projets-mael', date: '2026-10', deployedAt: 1791269883937, url: 'https://mael-moi.vercel.app' },
   { n: 13, name: 'hosto-mm', date: '2026-10', deployedAt: 1791212822239, url: 'https://hosto-mm.vercel.app' },
 ];
@@ -62,6 +70,7 @@ window.PROJECTS_FALLBACK = [
       deployedAt: p.deployedAt,
       url: p.url,
       state: p.state,
+      repo: p.repo,
       last: usefulCommit(p.last) ? p.last : null,
     }));
   }
@@ -79,7 +88,7 @@ window.PROJECTS_FALLBACK = [
         <div class="card-meta"><span>N°${pad(p.n)} · ${esc(p.date)}</span><span class="status" data-state="${esc(p.state || 'READY')}">${status}</span></div>
         <div class="card-title">${esc(p.name)}</div>
         ${text ? `<div class="card-desc">${esc(text)}</div>` : ''}
-        <div class="tags"><span class="tag">GitHub</span><span class="tag">Vercel</span>${tag}</div>
+        <div class="tags">${p.repo === null ? '' : '<span class="tag">GitHub</span>'}<span class="tag">Vercel</span>${tag}</div>
       </div>
     </a>`;
   }
